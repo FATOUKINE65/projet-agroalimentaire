@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*  text-decoration :none y a pas trait de soulignement autour d'un text*/
+    /*  box-sizing est une prpriété trés utile 
+    utile pour éviter qu'un élément ne dépasse de son parent à cause
+    des bordues trop large ou mages internes trop grande . Et borfer-box 
+     permet que en ajoutant ou en augmentant les marges ou bordures de 
+     l'élément ce dernier ne subira aucun changement. */
+}
+
+body {
+     font-family: "poppins"," sans serif";
+}
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    box-shadow:  0px 0px 10px 0 ;
+}
+header .logo{
+    display: flex;
+}
+header .logo H2 span{
+    color: green;
+    font-style: italic;
+}
+.menu {
+    display: flex; /* le mettre en inline-block */
+}
+.menu li {
+    list-style: none; /* supprimer les listes points(.) */
+    margin: 0 15px; /* marge extérieur des listes pour chaque li*/
+}
+.menu li a {
+    text-decoration: none; 
+    font-size:  15px;
+    color: black;
+    font-weight: 300px;
+    justify-content: center;
+    align-items: center;
+    
+}
+header button {
+    background-color: rgb(31, 99, 31);
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 25px;
+}
+
+#recherche{
+    margin-left: 700px;
+}
+/*  Section home */
+#home {
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#home .left {
+    width: 40%;
+}
+#home .left h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+#home .left h1 span {
+    color: #070102;
+}
+#home .left p {
+    margin-bottom: 30px;
+    color: #999;
+    font-size: 13px;
+}
+#home .left a {
+    background-color: rgb(31, 99, 31);;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    transition: 0.5s;
+}
+#home .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .right img {
+    width: 90%;
+}
+/* section transformation agricole */
+.TAgroalimentaire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  -1px 1px 5px black ;
+    background-color: aliceblue;
+    
+
+}
+.TAgroalimentaire .gauche {
+    width: 30%;
+    height: 400px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px; 
+    margin: 50px;
+    gap: 10px;
+    border-radius: 24px;
+}
+.TAgroalimentaire .droite {
+    width: 70%;
+    height: 400px;
+    padding: 50px; 
+    margin: 50px;
+    background-color:white;
+    border-radius: 24px;
+}
+.TAgroalimentaire .gauche img {
+
+    width: 80%;
+}
+
+
+.TAgroalimentaire .droite .imgdroite img {
+    width: 200px;
+    border-radius:  0 32px 0 32px;
+    border: 10px solid grey;
+}
+/* Menu  des produits*/
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding:  50px 10px;
+    box-shadow:  -1px 1px 5px black ;
+}
+.minititre{
+    margin-top: 25px;
+    font-size: 16px;
+    color: #070102;
+
+}
+.titre{
+    font-size: 20px;
+    color: green;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.Produits{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+}
+.Produits .Pdt{
+    height: 320px;
+    width: 23%;
+    background-color: #fff;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8)
+    
+}
+.Produits .Pdt img {
+    height: 120px;
+    width: 130px;
+    margin-bottom: 15px;
+}
+.Produits .Pdt p {
+    text-align: center;
+    font-size: 18px;
+    
+}
+.Produits .Pdt a {
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: green;
+    padding: 5px 60px;
+    color: #fff;
+    border-radius: 6px;    
+}
+.etoiles{
+    color: green;
+}
+/*  les temoignages*/
+.temoignage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh- 50px);
+    flex-direction: column;
+    background-image:  url("person\ orange.jpg");
+    padding: 0 10%;
+}
+.temoignage h2{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#premier{
+    margin-bottom: 40px;
+    font-size: 12px;
+    font-weight: 20px;
+    color: #fff;
+    
+}
+.lestemoignages{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.lestemoignages .temoin div{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #fff;
+    
+   
+
+}
+.lestemoignages .temoin  img{
+    width: 90px;
+    height: 90px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+
+.lestemoignages .temoin {
+    
+    width: 20%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 10px;
+
+   
+
+}
+.lestemoignages .temoin H4 {
+    margin-left: 15px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: green;
+}
+.lestemoignages .temoin p {
+    font-size: 13px;
+}
+/*  Publicite*/
+.publicite{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.publicite .publeft{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+.publicite .publeft img{
+    width: 400px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    
+   
+}
+.publicite .publeft p{
+    font-size: 13px;
+    font-weight: 15px;
+    
+}
+.publicite .pubrigth{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.publicite .pubrigth img{
+    width: 300px;
+    
+    
+}
+/* Email */
+.Email{
+    background-image: url("couscous.jpeg");
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.Email .email1{
+    display: flex;
+    justify-content: center;
+}
+.Email input {
+    width: 600px;
+    height: 25px;
+    padding: 15px;
+    margin:20px;
+    
+}
+#btn{
+    display: flex;
+    justify-content: center;
+}
+#btn button{
+    color: #fff;
+    background-color:green ;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+
+}
+/* Services */
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh- 50px);
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 0 10%;
+    
+}
+.service h5{
+    color: green;
+}
+
+.lesservices{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.lesservices .unservice div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    
+}
+.lesservices .unservice img{
+        width: 90px;
+        height: 90px;
+        
+}
+.lesservices .unservice {
+    
+    width: 20%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+.lesservices .unservice  p{
+    font-size: 11px;
+    font-weight: 12px;
+}
+.lesservices .unservice h4{
+    color: green;
+    font-size: 15px;
+}
+/* Contact*/
+.contact{
+    background-image: url("agro.jpg");
+    text-align: center;
+    justify-content: center;
+   
+   
+}
+.contact input {
+    width: 600px;
+    height: 30px;
+    padding:10px ;
+    margin: 20px;
+}
+.contact button{
+    width: 600px;
+    height: 30px;
+    margin: 20px;
+    background-color: green;
+    border-radius: 2px;
+}
+#message{
+    width: 600px;
+    height: 100px;
+    
+
+}
+/* footer*/
+.foot{
+    background-color: black;
+}
+.foot .rect{
+    width: 100%;
+    height: 20px;
+    background-color: aliceblue;
+}
+.information{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    
+    
+}
+.information .objectif{
+    width: 30%;
+    color: #fff;
+    
+}
+.information .Heure{
+    width: 25%;
+    color:#fff;
+}
+.information .Contacter{
+    width: 30%;
+    color:#fff;
+}
+h5{
+    font-size: 19px;
+    padding: 20px;
+    font-style: normal;
+
+}
+.foot .rect2{
+    width: 100%;
+    height: 20px;
+    margin-left: -15px;
+    background-color: aliceblue;
+}
+.foot .rect2 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot .dernier{
+    width: 100%;
+    height: 500px;
+    margin-top:2px;
+    background-color: aliceblue;
+}
+
+
+
+
+
+
+
+    
+    
